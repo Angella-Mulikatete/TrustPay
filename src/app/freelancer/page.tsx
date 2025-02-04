@@ -17,19 +17,19 @@
 
 
 import { useState } from 'react';
-import { 
-  Card, 
-  CardHeader, 
-  CardTitle, 
-  CardContent,
-  CardFooter 
+import {
+    Card,
+    CardHeader,
+    CardTitle,
+    CardContent,
+    CardFooter
 } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Clock, Award, DollarSign } from 'lucide-react';
 
 const FreelancerDashboard = () => {
-  const [selectedTab, setSelectedTab] = useState('milestones');
+    const [selectedTab, setSelectedTab] = useState('milestones');
 
   return (
     <div className="space-y-6">
