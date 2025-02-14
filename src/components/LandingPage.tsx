@@ -1,3 +1,5 @@
+
+
 'use client';
 
 //import Link from 'next/link';
@@ -6,7 +8,8 @@
 import { useEffect } from 'react';
 import NavBar from './navBar';
 import Feature from './Feature';
-import Hero from './Hero';
+//import Hero from './Hero';
+import Login from './Login';
 
 
 
@@ -23,7 +26,9 @@ export default function LandingPage() {
          //className="container mx-auto px-4 pt-32 pb-20"
         >
         {/* Hero Section */}
-        <Hero/>
+        {/* <Hero/> */}
+
+        <Login/>
         {/* Features Grid */}
         <Feature/>
       </main>

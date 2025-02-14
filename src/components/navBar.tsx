@@ -3,7 +3,8 @@ import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 //import { Wallet } from 'lucide-react';
-import { ConnectButton } from '@rainbow-me/rainbowkit';
+//import { ConnectButton } from '@rainbow-me/rainbowkit';
+//import Login from './Login';
 
 const NavBar = () => {
   return (
@@ -20,14 +21,15 @@ const NavBar = () => {
               //className="rounded-full object-cover" 
             />
           </Link>
+{/*         
           <span 
            // variant="outline"
             className=" items-center space-x-4 bg-white hover:bg-blue-50 transition-all duration-300 border-blue-200 hover:border-blue-400"
           >
-            {/* <Wallet className="w-4 h-4" />
-            <span>Connect Wallet</span> */}
+            
             <ConnectButton />
-          </span>
+        
+          </span> */}
         </div>
       </nav>
     </div>

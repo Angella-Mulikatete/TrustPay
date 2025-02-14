@@ -21,10 +21,11 @@ import {
   QueryClientProvider,
   QueryClient,
 } from "@tanstack/react-query";
+import Login from '@/components/Login';
 
 const config = getDefaultConfig({
-  appName: 'My RainbowKit App',
-  projectId: 'YOUR_PROJECT_ID',
+  appName: 'TrustPay DApp',
+  projectId: '1a787640c27b1503945c31848d4bc76b',
   chains: [mainnet, polygon, optimism, arbitrum, base],
   ssr: true, // If your dApp uses server side rendering (SSR)
 });
@@ -35,7 +36,9 @@ export default function Home() {
     <WagmiProvider config={config}>
     <QueryClientProvider client={queryClient}>
       <RainbowKitProvider>
-      <LandingPage/>
+      {/* <LandingPage/> */}
+      <Login/>
+  
       </RainbowKitProvider>
       </QueryClientProvider>
     </WagmiProvider>
